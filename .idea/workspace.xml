@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87b66bc1-8671-4b22-bd51-2261d48c47d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/SubmitButton/SubmitButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SubmitButton/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ButtonDemo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/FormDemo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ImageDemo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/delete-icon-disabled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/delete-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FormDemo2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FormDemo2First.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FormDemo2Second.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/cag2050/Documents/WebstormProjects4Paradigm/antd-headlessui-demo/src/static/images",
+    "last_opened_file_path": "/Users/cag2050/Documents/WebstormProjects4Paradigm/antd-headlessui-demo/src/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -62,8 +52,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -87,7 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1722254455861</updated>
       <workItem from="1722254457153" duration="3463000" />
-      <workItem from="1722304418277" duration="20414000" />
+      <workItem from="1722304418277" duration="20550000" />
+      <workItem from="1722391219397" duration="11672000" />
     </task>
     <servers />
   </component>
