@@ -4,7 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 说明：
 1. 注意Route元素中，index属性的使用
-2. 
+2. css设置Header高度：
+```
+.ant-layout-header {
+    height: 48px;
+    line-height: 48px;
+}
+```
+3. 
+
 
 
 ## Available Scripts

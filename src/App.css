@@ -39,6 +39,89 @@
 
 /* 设置Header高度 */
 .ant-layout-header {
-    height: 48px;
+    height: 49px;
     line-height: 48px;
 }
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-active::after {
+    border-bottom-color: #1A58FF !important;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+    font-weight: 500;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after {
+    border-bottom-color: #1A58FF;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item {
+    margin: 0px 40px 0px 40px;
+}
+
+.main-layout {
+    background: url("./static/images/page-bg.png") no-repeat;
+    background-size: contain;
+    background-position: center top;
+    height: calc(100vh - 49px);
+}
+
+.left-menu {
+    /*width: 208px;*/
+    height: calc(100vh - 97px);
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.collapse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 42px;
+}
+
+.collapse-txt {
+    margin-left: 10px;
+    font-family: PingFangSC, PingFang SC;
+    font-weight: 400;
+    font-size: 14px;
+    color: #707B96;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+}
+
+.ant-menu-inline {
+    .ant-menu-title-content {
+        flex: none !important;
+        top: -2px !important;
+        position: relative !important;
+        margin-left: 10px;
+    }
+
+    .ant-menu-item-selected {
+        background-color: rgb(240, 243, 254);
+
+        .ant-menu-title-content {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 500;
+            font-size: 14px;
+            color: #3278FF;
+        }
+    }
+}
+
+.ant-menu-inline-collapsed {
+    .ant-menu-title-content {
+        display: none;
+    }
+
+    .ant-menu-item-selected {
+        background-color: white;
+    }
+}
+
+
+

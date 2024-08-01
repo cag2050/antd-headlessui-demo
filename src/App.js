@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Routers from './routers';
 import {useNavigate, useLocation, withRouter} from "react-router-dom";
-import {Col, ConfigProvider, Layout, Menu} from "antd";
+import {Col, ConfigProvider, Image, Layout, Menu} from "antd";
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
@@ -15,6 +15,14 @@ import {
     LinkOutlined
 } from '@ant-design/icons';
 import zhCN from 'antd/lib/locale/zh_CN';
+import FlowActive from './static/images/flow-active.png'
+import Flow from './static/images/flow.png'
+import TestActive from './static/images/test-active.png'
+import Test from './static/images/test.png'
+import ServeActive from './static/images/serve-active.png'
+import Serve from './static/images/serve.png'
+import MenuHide from './static/images/menu-hide.png'
+import MenuShow from './static/images/menu-show.png'
 
 const {Header, Content, Sider} = Layout;
 
@@ -81,13 +89,20 @@ function App() {
             label: 'form',
             icon: <AppstoreOutlined/>,
             children: [
-                {key: 'form-demo', label: 'form-demo'},
+                {
+                    key: 'form-demo',
+                    label: 'form-demo',
+                    icon: <Image src={currentSubMenu === 'form-demo' ? FlowActive : Flow} preview={false}></Image>
+                },
                 {
                     key: 'form-demo2',
                     label: 'form-demo2',
-                    // children: [
-                    //     {key: 'form-demo2-first', label: 'form-demo2-first'},
-                    // ]
+                    icon: <Image src={currentSubMenu === 'form-demo2' ? TestActive : Test} preview={false}></Image>
+                },
+                {
+                    key: 'form-demo3',
+                    label: 'form-demo3',
+                    icon: <Image src={currentSubMenu === 'form-demo3' ? ServeActive : Serve} preview={false}></Image>
                 },
             ]
         },
@@ -117,12 +132,13 @@ function App() {
         }
     ]
 
+    const [collapsed, setCollapsed] = useState(false);
+
     return (
         <ConfigProvider
             locale={zhCN}
             theme={{
                 token: {
-                    horizontalLineHeight: '30px',
                     // borderRadiusLG: 4,
                     // borderRadius: 6,
                     // colorPrimary: '#1677ff',
@@ -131,6 +147,12 @@ function App() {
                     // },
                 },
                 components: {
+                    Menu: {
+                        activeBarHeight: 3,
+                        itemColor: '#111111',
+                        itemHoverColor: '#111111',
+                        horizontalItemSelectedColor: '#111111',
+                    },
                     // Card: {
                     //     headerBg: '#eee'
                     // },
@@ -150,9 +172,17 @@ function App() {
                                 selectedKeys={currentMenu}
                                 items={itemList}
                                 style={{
-                                    flex: 1,
-                                    // width: 80,
-                                    minWidth: 0,
+                                    // display: 'flex',
+                                    // flex: 1,
+                                    // // width: 80,
+                                    // minWidth: 0,
+                                    // flexBasis: 240,
+                                    // flexGrow: 1,
+                                    // flex: 1,
+                                    // width: 750
+                                    // flex: "auto",
+                                    // minWidth: 900,
+                                    // width: 900,
                                 }}
                                 // onSelect={({key, keyPath, selectedKeys, domEvent}) => {
                                 onSelect={(select) => {
@@ -165,33 +195,53 @@ function App() {
                             />
                         </div>
                     </Header>
-                    <Layout>
-                        {
-                            showSider && <Sider width={200}
-                                                style={{
-                                                    background: "#F3F4F6",
-                                                }}
-                                                collapsible={true}>
-                                <Menu mode="inline"
-                                      selectedKeys={currentSubMenu}
-                                      style={{
-                                          height: 'calc(100vh - 64px)',
-                                          borderRight: '1px solid #f0f0f0',
-                                      }}
-                                      items={
-                                          itemList1.filter(i => i.key === currentMenu)[0]?.children
-                                      }
-                                      onSelect={(select) => {
-                                          console.log("left Menu select: ", select)
-                                          setCurrentSubMenu(select.key)
-                                          navigate(`/${currentMenu}/${select.key}`)
-                                      }}>
-                                </Menu>
-                            </Sider>
-                        }
-                        <Content>
-                            <Routers/>
-                        </Content>
+                    <Layout className='main-layout'>
+                        <div style={{width: 24}}></div>
+                        <div className='left-menu' style={{width: collapsed ? 56 : 208}}>
+                            {
+                                showSider && <Sider
+                                    width={collapsed ? 56 : 208}
+                                    style={{
+                                        background: "transparent",
+                                    }}
+                                    trigger={null}
+                                    collapsible={true}
+                                    collapsed={collapsed}
+                                    collapsedWidth={56}>
+                                    <Menu
+                                        mode="inline"
+                                        selectedKeys={currentSubMenu}
+                                        style={{
+                                            borderRadius: '12px',
+                                            //     height: 'calc(100vh - 200px)',
+                                            //     borderRight: '1px solid #f0f0f0',
+                                            //     marginTop: 30,
+                                        }}
+                                        items={
+                                            itemList1.filter(i => i.key === currentMenu)[0]?.children
+                                        }
+                                        onSelect={(select) => {
+                                            console.log("left Menu select: ", select)
+                                            setCurrentSubMenu(select.key)
+                                            navigate(`/${currentMenu}/${select.key}`)
+                                        }}>
+                                    </Menu>
+                                    {!collapsed && (<div onClick={() => setCollapsed(!collapsed)} className="collapse-container" style={{left: collapsed ? 44 : 77}}>
+                                        <div><Image src={MenuHide} preview={false}></Image></div>
+                                        <span className="collapse-txt">收起侧边栏</span>
+                                    </div>)}
+                                    {collapsed && (<div onClick={() => setCollapsed(!collapsed)} className="collapse-container" style={{left: collapsed ? 44 : 77}}>
+                                        <div><Image src={MenuShow} preview={false}></Image></div>
+                                    </div>)}
+                                </Sider>
+                            }
+                        </div>
+                        <div style={{width: 24}}></div>
+                        <div>
+                            <Content>
+                                <Routers/>
+                            </Content>
+                        </div>
                     </Layout>
                 </Layout>
 

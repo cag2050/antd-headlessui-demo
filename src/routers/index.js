@@ -4,6 +4,7 @@ import FormDemo from "../pages/FormDemo";
 import FormDemo2 from "../pages/FormDemo2";
 import FormDemo2First from "../pages/FormDemo2First";
 import FormDemo2Second from "../pages/FormDemo2Second";
+import FormDemo3 from "../pages/FormDemo3";
 import ButtonDemo from "../pages/ButtonDemo";
 import ImageDemo from "../pages/ImageDemo";
 import SearchDemo from "../pages/input/SearchDemo";
@@ -19,6 +20,7 @@ const Routers = () => {
                     <Route path='form-demo2-first' element={<FormDemo2First></FormDemo2First>}></Route>
                     <Route path='form-demo2-second' element={<FormDemo2Second></FormDemo2Second>}></Route>
                 </Route>
+                <Route path='form-demo3' element={<FormDemo3></FormDemo3>}></Route>
             </Route>
             <Route path='button'>
                 <Route path='button-demo' element={<ButtonDemo></ButtonDemo>}></Route>
