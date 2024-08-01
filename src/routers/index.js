@@ -6,6 +6,7 @@ import FormDemo2First from "../pages/FormDemo2First";
 import FormDemo2Second from "../pages/FormDemo2Second";
 import ButtonDemo from "../pages/ButtonDemo";
 import ImageDemo from "../pages/ImageDemo";
+import SearchDemo from "../pages/input/SearchDemo";
 
 const Routers = () => {
     return (
@@ -24,6 +25,9 @@ const Routers = () => {
             </Route>
             <Route path='image'>
                 <Route path='image-demo' element={<ImageDemo></ImageDemo>}></Route>
+            </Route>
+            <Route path='input'>
+                <Route path='search-demo' element={<SearchDemo></SearchDemo>}></Route>
             </Route>
         </Routes>
     )
