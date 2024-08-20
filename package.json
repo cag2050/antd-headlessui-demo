@@ -3,28 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.16.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
     "react-router-dom": "^6.22.3",
-    "antd": "^5.16.2",
-    "@headlessui/react": "^1.7.13"
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
     "craco-less": "^3.0.1",
     "less": "^4.2.0",
-    "less-loader": "^12.2.0"
+    "less-loader": "^12.2.0",
+    "webpack-bundle-analyzer": "^4.10.2"
   },
   "scripts": {
     "start": "npx craco start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npx craco build",
+    "test": "npx craco test",
+    "eject": "npx craco eject"
   },
   "eslintConfig": {
     "extends": [

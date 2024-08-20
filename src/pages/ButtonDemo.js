@@ -1,8 +1,9 @@
+import './ButtonDemo.less'
 
 const ButtonDemo = () => {
     return (
         <>
-            <div>ButtonDemo</div>
+            <div className="button-class">ButtonDemo</div>
         </>
     )
 }

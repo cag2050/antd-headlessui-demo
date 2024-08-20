@@ -81,6 +81,22 @@ function App() {
             label: 'input',
             // icon: <AppstoreOutlined/>,
         },
+        {
+            key: 'icon',
+            label: 'icon',
+        },
+        {
+            key: 'iframe',
+            label: 'iframe',
+        },
+        {
+            key: 'grafana',
+            label: 'grafana',
+        },
+        {
+            key: 'table',
+            label: 'table',
+        },
     ]
 
     const itemList1 = [
@@ -129,7 +145,40 @@ function App() {
             children: [
                 {key: 'search-demo', label: 'search-demo'}
             ]
-        }
+        },
+        {
+            key: 'icon',
+            label: 'icon',
+            icon: <AppstoreOutlined/>,
+            children: [
+                {key: 'ellipsis-outlined-demo', label: 'ellipsis-outlined-demo'}
+            ]
+        },
+        {
+            key: 'iframe',
+            label: 'iframe',
+            icon: <AppstoreOutlined/>,
+            children: [
+                {key: 'iframe-demo', label: 'iframe-demo'},
+                {key: 'iframe-grafana-demo', label: 'iframe-grafana-demo'},
+            ]
+        },
+        {
+            key: 'grafana',
+            label: 'grafana',
+            icon: <AppstoreOutlined/>,
+            children: [
+                {key: 'grafana-demo1', label: 'grafana-demo1'}
+            ]
+        },
+        {
+            key: 'table',
+            label: 'table',
+            icon: <AppstoreOutlined/>,
+            children: [
+                {key: 'table-demo1', label: 'table-demo1'}
+            ]
+        },
     ]
 
     const [collapsed, setCollapsed] = useState(false);
@@ -237,8 +286,8 @@ function App() {
                             }
                         </div>
                         <div style={{width: 24}}></div>
-                        <div>
-                            <Content>
+                        <div style={{width: '100%'}}>
+                            <Content style={{width: '100%', height: '100%'}}>
                                 <Routers/>
                             </Content>
                         </div>

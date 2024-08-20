@@ -11,7 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     line-height: 48px;
 }
 ```
-3. 
+3. webpack插件（配置在对象的webpack.plugins里面）：https://craco.js.org/docs/configuration/webpack/ 和craco插件（配置在对象的plugins里面）：https://craco.js.org/docs/configuration/plugins/ ，配置的位置不同
+4. 
 
 
 

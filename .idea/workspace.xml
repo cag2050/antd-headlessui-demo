@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87b66bc1-8671-4b22-bd51-2261d48c47d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/FormDemo3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/flow-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/flow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/menu-hide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/menu-show.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/page-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/serve-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/serve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/test-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ButtonDemo.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/grafana/GrafanaDemo1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/icon/EllipsisOutlinedDemo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/icon/EllipsisOutlinedDemo.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/iframe/IframeDemo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/iframe/IframeDemo.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/iframe/IframeGrafanaDemo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/table/TableDemo1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craco.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ButtonDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ButtonDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FormDemo3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FormDemo3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.report.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/cag2050/Documents/WebstormProjects4Paradigm/antd-headlessui-demo/src/static/images",
+    "last_opened_file_path": "/Users/cag2050/Documents/WebstormProjects4Paradigm/antd-headlessui-demo/src/pages/iframe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,6 +64,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/iframe" />
       <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$" />
@@ -68,6 +72,16 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/SubmitButton" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="report.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/antd-headlessui-demo/build/report.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.report.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -89,7 +103,20 @@
       <workItem from="1722304418277" duration="20550000" />
       <workItem from="1722391219397" duration="13724000" />
       <workItem from="1722425666630" duration="5025000" />
-      <workItem from="1722477712278" duration="20671000" />
+      <workItem from="1722477712278" duration="21751000" />
+      <workItem from="1722566520759" duration="5547000" />
+      <workItem from="1722597219872" duration="4620000" />
+      <workItem from="1722850931751" duration="3000000" />
+      <workItem from="1722858378992" duration="220000" />
+      <workItem from="1722859122142" duration="800000" />
+      <workItem from="1722861219736" duration="1091000" />
+      <workItem from="1722909540077" duration="1040000" />
+      <workItem from="1723104494158" duration="7263000" />
+      <workItem from="1723188078777" duration="1393000" />
+      <workItem from="1723428292660" duration="4232000" />
+      <workItem from="1723693525271" duration="1575000" />
+      <workItem from="1723705509226" duration="923000" />
+      <workItem from="1724149094342" duration="2064000" />
     </task>
     <servers />
   </component>
